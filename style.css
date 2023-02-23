@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(36, 0, 0);
+    background: linear-gradient(90deg, rgba(36, 0, 0, 0.6615021008403361) 0%, rgba(205, 235, 75, 0.6166841736694677) 0%, rgba(255, 0, 0, 0.6643032212885154) 87%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 1;
+}
+
+.container {
+    margin: 30px auto;
+    width: 350px;
+}
+
+h2 {
+    letter-spacing: 1.5px;
+    margin: auto;
+    font-size: 2rem;
+}
+
+h3 {
+    margin: 40px 0 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #463c3c;
+}
+
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.credit-debit-container {
+    background-color: rgba(233, 243, 183, 0.739);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.credit-debit-container>div {
+    flex: 1;
+    text-align: center;
+}
+
+.credit-debit-container>div:first-of-type {
+    border-right: 2px solid #000000;
+}
+
+.money {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    margin: 5px 0;
+}
+
+.money.credit {
+    color: #16C79A;
+}
+
+.money.debit {
+    color: #F55C47;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.list li {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.list li.credit {
+    border-right: 10px solid #16C79A;
+}
+
+.list li.debit {
+    border-right: 10px solid #F55C47;
+}
+
+.delete-btn {
+    background-color: #BE0000;
+    border: 0;
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 3px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.list li:hover .delete-btn {
+    opacity: 1;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+input {
+    border: 1px solid #343A40;
+    border-radius: 5px;
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn {
+    background: rgb(45, 168, 253);
+    background: linear-gradient(0deg, rgba(45, 168, 253, 1) 19%, rgba(34, 53, 195, 0.4906337535014006) 85%);
+    border-radius: 34px;
+    display: block;
+    border: none;
+    font-size: 19px;
+    margin: 10px 0 30px;
+    padding: 12px;
+    width: 100%;
+    font-weight: 500;
+    margin-top: 25px;
+}
